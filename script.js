@@ -20,7 +20,6 @@ fetch(`https://api.github.com/repos/${ORG}/${REPO}/releases/latest`)
     setText("latest-release", data.tag_name || "N/A");
     setLink("latest-release-link", data.html_url || "#");
 
-    console.log(data, "data");
     if (data) {
       const regexRelease = /^v(\d{4}\.\d{2})\.\d{2}$/;
       const match = data.tag_name.match(regexRelease);
