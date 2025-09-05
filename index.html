@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MapStore - Open Source Geospatial Content Management System</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+        <div class="container">
+            <div class="d-flex align-items-center">
+                <img src="assets/mapstore.png" alt="Logo" class="me-2" style="height: 40px;">
+                <span class="fs-3 fw-bold text-primary"><span style="color: var(--mapstore-blue)">Map</span><span style="color: var(--mapstore-green)">Store</span></span>
+            </div>
+
+            <div class="d-flex">
+                <a href="https://mapstore.geosolutionsgroup.com/mapstore/#/" class="btn btn-warning fw-semibold px-4">Try the Demo</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="row align-items-center">
+
+                <!-- Left Column - Content -->
+                <div class="col-lg-6 mb-5 mb-lg-0">
+                    <div class="text-center text-lg-start">
+                        <h1 class="display-8 fw-bold mb-4 text-center" style="color: var(--mapstore-blue);">
+                            Open-source web mapping framework
+                        </h1>
+                        <p class="lead text-muted mb-4 text-center">
+                            The solution to create and share maps, dashboards, geostories with 3D support on the web.
+                            And it is open-source too!
+                        </p>
+
+                        <!-- MapStore Logo -->
+                        <div class="mb-4 text-center">
+                            <img src="assets/mapstore.png" alt="MapStore Logo" class="img-fluid" style="height: 60px;">
+                        </div>
+
+                        <!-- Version Buttons -->
+                        <div class="row version-columns g-3">
+                            <div class="col-md-4">
+                                <div class="text-center">
+                                    <a id="latest-release-link" href="" target="_blank" class="version-btn btn-latest">
+                                        Latest version
+                                    </a>
+                                    <div id="latest-release" class="version-text">4.4.2</div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4">
+                                <div class="text-center">
+                                    <a id="stable-branch-link" href="" target="_blank" class="version-btn btn-stable">
+                                        Stable branch
+                                    </a>
+                                    <div id="stable-branch" class="version-text">4.4.x</div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4">
+                                <div class="text-center">
+                                    <a id="dev-branch-link" href="" target="_blank" class="version-btn btn-development">
+                                        Development
+                                    </a>
+                                    <div id="dev-branch" class="version-text">master</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Column - Preview -->
+                <div class="col-lg-6 text-center px-4">
+                    <img src="assets/preview.png" alt="Preview" class="img-fluid shadow rounded">
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer-section">
+        <div class="container">
+            <div class="row">
+
+                <!-- Documentation -->
+                <div class="col-lg-6 col-xl-4">
+                    <div class="footer-item">
+                        <div class="footer-icon">
+                            <i class="fas fa-book"></i>
+                        </div>
+                        <div class="footer-content">
+                            <h5><a href="https://docs.mapstore.geosolutionsgroup.com/en/latest/" target="_blank">Documentation</a></h5>
+                            <p>Guides for users, developers, and administrators</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Channels -->
+                <div class="col-lg-6 col-xl-4">
+                    <div class="footer-item">
+                        <div class="footer-icon">
+                            <i class="fas fa-comments"></i>
+                        </div>
+                        <div class="footer-content">
+                            <h5><a href="https://github.com/geosolutions-it/MapStore2/?tab=readme-ov-file#communication" target="_blank">Channels</a></h5>
+                            <p>Discussion groups for users and developers</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQs -->
+                <!-- <div class="col-lg-6 col-xl-4">
+                    <div class="footer-item">
+                        <div class="footer-icon">
+                            <i class="fas fa-question-circle"></i>
+                        </div>
+                        <div class="footer-content">
+                            <h5><a href="https://docs.mapstore.geosolutionsgroup.com/en/latest/developer-guide/dev-faq/" target="_blank">FAQs</a></h5>
+                            <p>Frequently Asked Questions about MapStore</p>
+                        </div>
+                    </div>
+                </div> -->
+
+                <!-- Issue Tracker -->
+                <div class="col-lg-6 col-xl-4">
+                    <div class="footer-item">
+                        <div class="footer-icon">
+                            <i class="fas fa-bug"></i>
+                        </div>
+                        <div class="footer-content">
+                            <h5><a href="https://github.com/geosolutions-it/MapStore2/issues" target="_blank">Issue Tracker</a>
+                            </h5>
+                            <p>Bugs, feature requests, and development roadmap</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="footer-bottom">
+                <div class="row align-items-center">
+                    <div class="col-md-8">
+                        <p>
+                            This <a href="#">Website</a> is designed by
+                            <a href="https://www.geo-solutions.it/" target="_blank">GeoSolutions</a>
+                        </p>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="social-links">
+                            <a href="https://www.linkedin.com/company/geosolutionsgroup" target="_blank"
+                                title="LinkedIn">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                            <a href="https://twitter.com/geosolutions_it" target="_blank" title="Twitter">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./script.js"></script>
+
+</body>
+
+</html>
