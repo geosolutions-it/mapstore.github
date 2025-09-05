@@ -9,11 +9,6 @@ body {
     padding: 0;
 }
 
-.navbar-brand img {
-    height: 32px;
-    width: auto;
-}
-
 .hero-section {
     background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
     padding: 80px 0;
@@ -28,15 +23,7 @@ body {
     right: 0;
     bottom: 0;
     left: 0;
-    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="20" cy="20" r="1" fill="%23000" opacity="0.02"/><circle cx="80" cy="40" r="1" fill="%23000" opacity="0.02"/><circle cx="40" cy="80" r="1" fill="%23000" opacity="0.02"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
     pointer-events: none;
-}
-
-.mapstore-logo {
-    width: 120px;
-    height: auto;
-    margin: 0 auto 2rem auto;
-    display: block;
 }
 
 .version-btn {
@@ -77,60 +64,6 @@ body {
     font-weight: 600;
     color: #2c5f7c;
     margin-top: 5px;
-}
-
-.preview-container {
-    background: white;
-    border-radius: 12px;
-    padding: 30px;
-    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
-    position: relative;
-}
-
-.preview-mockup {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    height: 280px;
-    border-radius: 8px;
-    position: relative;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.mockup-content {
-    text-align: center;
-    color: white;
-    z-index: 2;
-}
-
-.mockup-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.2);
-    z-index: 1;
-}
-
-.feature-icons {
-    display: flex;
-    gap: 15px;
-    margin-top: 20px;
-    justify-content: center;
-}
-
-.feature-icon {
-    width: 60px;
-    height: 60px;
-    background: #f8f9fa;
-    border-radius: 8px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 24px;
-    color: #2c5f7c;
 }
 
 .footer-section {

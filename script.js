@@ -40,7 +40,7 @@ fetch(`https://api.github.com/repos/${ORG}/${REPO}/releases/latest`)
   })
   .catch(() => setText("latest-release", "Unavailable"));
 
-// Get development branch (default branch, usually master or main)
+// Get development branch (default branch, master)
 fetch(`https://api.github.com/repos/${ORG}/${REPO}/branches/master`)
   .then((r) => r.json())
   .then((data) => {
@@ -48,53 +48,3 @@ fetch(`https://api.github.com/repos/${ORG}/${REPO}/branches/master`)
     setLink("dev-branch-link", data._links.html || "#");
   })
   .catch(() => setText("dev-branch", "Unavailable"));
-
-// Add smooth scrolling for anchor links
-document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
-  anchor.addEventListener("click", function (e) {
-    e.preventDefault();
-    const target = document.querySelector(this.getAttribute("href"));
-    if (target) {
-      target.scrollIntoView({
-        behavior: "smooth",
-        block: "start",
-      });
-    }
-  });
-});
-
-// Add hover effects to version buttons
-document.querySelectorAll(".version-btn").forEach((btn) => {
-  btn.addEventListener("mouseenter", function () {
-    this.style.transform = "translateY(-2px)";
-    this.style.boxShadow = "0 4px 12px rgba(0,0,0,0.15)";
-  });
-
-  btn.addEventListener("mouseleave", function () {
-    this.style.transform = "translateY(0)";
-    this.style.boxShadow = "none";
-  });
-});
-
-// Animate elements on scroll
-const observerOptions = {
-  threshold: 0.1,
-  rootMargin: "0px 0px -50px 0px",
-};
-
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach((entry) => {
-    if (entry.isIntersecting) {
-      entry.target.style.opacity = "1";
-      entry.target.style.transform = "translateY(0)";
-    }
-  });
-}, observerOptions);
-
-// Observe footer items
-document.querySelectorAll(".footer-item").forEach((item) => {
-  item.style.opacity = "0";
-  item.style.transform = "translateY(20px)";
-  item.style.transition = "all 0.6s ease";
-  observer.observe(item);
-});
