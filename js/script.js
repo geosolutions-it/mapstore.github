@@ -1,13 +1,13 @@
 const ORG = "geosolutions-it";
 const REPO = "MapStore2";
 
-// Helper to set text content safely
+// Helper to set text content
 function setText(id, text) {
   const el = document.getElementById(id);
   if (el) el.textContent = text;
 }
 
-// Helper to set text content safely
+// Helper to set link content
 function setLink(id, text) {
   const el = document.getElementById(id);
   if (el) el.href = text;
