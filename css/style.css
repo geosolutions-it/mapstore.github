@@ -170,3 +170,7 @@ body {
         margin-top: 20px;
     }
 }
+
+a.mapstore-logo {
+    text-decoration: none;
+}
